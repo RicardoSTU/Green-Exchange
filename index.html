@@ -2,28 +2,33 @@
 <html>
 <head>
  <title>Green Exchange</title>
+ <meta charset="utf-8">
  <style>
   body {
-   background-color: #00FF00;
+   background-color: lightgreen;
   }
   h1 {
    text-align: center;
    font-size: 36px;
+   color: white;
    margin-top: 50px;
-   color: #FFFFFF;
   }
   form {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   margin-top: 50px;
-   color: #FFFFFF;
+   width: 50%;
+   margin: auto;
+   background-color: white;
+   padding: 20px;
+   border-radius: 10px;
+   box-shadow: 0px 0px 10px grey;
   }
   label {
-   font-size: 24px;
+   display: block;
    margin-bottom: 10px;
+   font-size: 18px;
+   color: grey;
   }
-  input[type="text"], select {
+  input[type="text"], input[type="email"], input[type="password"], select {
+   width: 100%;
    padding: 10px;
    font-size: 18px;
    border-radius: 5px;
@@ -31,36 +36,56 @@
    margin-bottom: 20px;
   }
   input[type="submit"] {
-   background-color: #FFFFFF;
-   color: #00FF00;
+   background-color: green;
+   color: white;
+   font-size: 24px;
    padding: 10px 20px;
-   font-size: 18px;
    border-radius: 5px;
    border: none;
    cursor: pointer;
   }
-  img {
-   max-width: 300px;
-   margin-top: 50px;
+  input[type="submit"]:hover {
+   background-color: darkgreen;
   }
  </style>
 </head>
 <body>
- <h1>Green Exchange</h1>
- <form>
-  <label for="item">Что вы хотите обменять?</label>
-  <input type="text" id="item" name="item">
-  <label for="wanted">Что вы ищете?</label>
-  <select id="wanted" name="wanted">
-   <option value="">Выберите товар</option>
-   <option value="Футболка">Футболка</option>
-   <option value="Джинсы">Джинсы</option>
-   <option value="Кроссовки">Кроссовки</option>
-   <option value="Кепка">Кепка</option>
-   <option value="Куртка">Куртка</option>
+ <h1>Green Exchange / Р–Р°С€С‹Р» РђР»РјР°С€СѓСѓ</h1>
+ <form action="#" method="post">
+  <label for="item">РќРµСЂСЃРµ:</label>
+  <input type="text" id="item" name="item" placeholder="РђР»РјР°С€СѓСѓ РЅРµСЂСЃРµРЅРё РєРёСЂРіРёР·РёРЅРёР·" required>
+
+  <label for="category">РљР°С‚РµРіРѕСЂРёСЏ:</label>
+  <select id="category" name="category" required>
+   <option value="">РљР°С‚РµРіРѕСЂРёСЏ С‚Р°РЅРґР°ТЈС‹Р·</option>
+   <option value="hat">РљРёР№РёРј</option>
+   <option value="shirt">РўРµС…РЅРёРєР°</option>
+   <option value="pants">РљРёС‚РµРї</option>
+   <option value="shoes">РђРєСЃРµСЃСЃСѓР°СЂ</option>
+   <option value="accessories">Р‘Р°С€РєР°</option>
   </select>
-  <input type="submit" value="Обменять">
+
+  <label for="size">УЁР»С‡У©Рј:</label>
+  <input type="text" id="size" name="size" placeholder="УЁР»С‡У©РјРґТЇ РєРёСЂРіРёР·РёРЅРёР·" required>
+
+  <label for="condition">РљРѕРЅРґРёС†РёСЏ:</label>
+  <select id="condition" name="condition" required>
+   <option value="">РљРѕРЅРґРёС†РёСЏ С‚Р°РЅРґР°ТЈС‹Р·</option>
+   <option value="new">Р–Р°ТЈС‹</option>
+   <option value="like-new">Р­ТЈ Р¶Р°РєС€С‹</option>
+   <option value="good">Р–Р°РєС€С‹</option>
+   <option value="fair">РћСЂС‚Рѕ</option>
+   <option value="poor">РљР°РЅР°Р°С‚С‚Р°РЅРґС‹СЂР°СЂР»С‹Рє</option>
+  </select>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" placeholder="Email РєРёСЂРіРёР·РёРЅРёР·" required>
+
+  <label for="password">РџР°СЂРѕР»СЊ:</label>
+  <input type="password" id="password" name="password" placeholder="РџР°СЂРѕР»СЊ РєРёСЂРіРёР·РёРЅРёР·" required>
+
+  <input type="submit" value="Р–РёР±РµСЂТЇТЇ">
  </form>
- <img src="https://cdn.pixabay.com/photo/2017/02/15/11/38/gift-2062425_960_720.png" alt="Exchange photo">
+<img src="https://cdn. pixabay.com/photo /2017/02/15/11/38/gift-2062425_960_720 .png" alt="Exchange photo"'>
 </body>
 </html>
